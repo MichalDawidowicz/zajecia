@@ -1,138 +1,118 @@
-html
-{
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 18px;
-    height: 100%;
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    min-height: 100%;
 }
-body
-{
-    height: 100%;
-    background: linear-gradient(to right, #023 50%,#FFF 50%)
+
+body {
+    min-height: 100%;
+}
+#srodek {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    float: none;
+}
+#login{}
+#tekst h1{
+    font-size: 18px;
+}
+#logowanie{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5em
+;
+}
+#logowanie.txt
+{font-size: 16px}
+#logowanie.dane{}
+#logowanie.button{
+    color: white;
+    background-color: red;
+    border: none;
+    width: 10px;
 
 }
-main
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+#tekst h2{font-size: 13px;
+font-weight: lighter;
+}
+#kolumna-prawa {
+    margin: 0 auto;
+    float: right;
+    width: 200px;
     height: 100%;
-    max-width: 1200px ;
-    margin: auto;
-    background: linear-gradient(to right, #023 35%,#FFF 35%);
-    padding-top: 20px;
+    text-align: center;
 }
-#dane
-{   background-color: #7de;
-    width: 88%;
-    margin:auto;
-    display: flex;
-    flex-direction: row;
-}
-#dane h1
-{
-    margin: 0;
+#kolumna-lewa {
     display: flex;
     flex-direction: column;
 
-
+    text-wrap: normal;
+    max-width: 20%;
+    float: left;
+    height: 100%;
+    margin-right: 25px;
+    margin-left: 10px;
 }
-#dane.info
-{
+#bezpieczenstwo .item {
     display: flex;
-    flex-direction: row;
-    width: 70%;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 30px;
-
+    font-size: 13px;
+    padding: 0 0 15px 0;
 }
-#dane.photo
-{
+#container{
     display: flex;
-    width: 30%;
+    flex-direction: row ;
 }
-#dane.photo img{width: 100%;}
-.fn
-{
-    font-size: 64px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
+#title{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    color: #444;
+    padding: 0 0 10px 0;
+    margin-bottom: 25px;
 }
-.ln
-{
-    font-size: 96px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding-bottom: 16px;
-    margin-bottom: 16px;
-    border-bottom: 3px solid white;
 
-}
-#home
-{
-    background-color: black;
-    color: white;
+
+#home {
+    background-color: white;
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-#home h1
-{
-    margin: 0;
-    padding: 0.5em;
-
-}
-#home nav ul
-{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-#home nav ul
-{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-#home nav a
-{
-    color:  white;
-    text-decoration: none;
-    border-bottom: 1px solid gray;
-
-}
-#home nav li{
     padding: 0.5rem;
-    border-bottom: grey;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
 }
-#home nav li:last-child{
-    border-bottom: none;
-    box-shadow: lightgray;
+
+
+
+#home h1 {
+    margin: 0;
+    padding: 0.5rem;
 }
-#home nav button
-{
-    display: block;
-    border:1px solid lightgray;
-    background-color: black;
-    color: white;
-    width: 48px;
+
+#home nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+#home nav a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    width: 100%;
     height: 48px;
+    box-sizing: border-box;
 }
-@media(min-width: 500px)
-{
-    #home nav button{display: none}
-    #home nav ul{display: flex}
-    #home nav a:hover
-    {
-        color:  lightgray;
-        border-bottom-color: white;
-    }
+
+#home nav li {
+    padding: 0.5rem;
 
 }
+
